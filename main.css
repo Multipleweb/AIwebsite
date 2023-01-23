@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(252, 248, 248);
+}
+/*banner*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(image/AI02.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .logo{
+    color: rgb(183, 229, 20);
+    font-family: serif;
+  }
+  .navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(241, 244, 242);
+  }
+  
+  .content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+  }
+  
+  .content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  
+  .login-btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .signup-btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cover {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  button:hover span {
+    width: 100%;
+  }
+  
+  button:hover {
+    border: none;
+  }
+  /*end banner*/
+  /*strat card*/
+.container{
+    display:flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background: white;
+    width: 290px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.card-image{
+    background-color: aqua;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-1{
+    background-image: url(image/brain.jpg);
+}
+.card-2{
+    background-image: url(image/computer.jpg);
+}
+.card-3{
+    background-image: url(image/whatAI.jpg);
+}
+.card p{
+    padding: 10px;
+}
+.card h2{
+    padding: 10px;
+}
+.card a{
+    background-color: rgb(16, 15, 15);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.card:hover{
+    background-color: rgb(33, 34, 34);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.09);
+    transition: 0.5s;
+}
+/*end card*/
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.fa:hover{
+  transform: scale(1.06);
+  transition: 0.5s;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-Youtube {
+  background-color: #f40a0a;
+  color: white;
+}
+.fa-instagram{
+  background: #f42525;
+  color: white;
+}
+.fa-telegram{
+  background: #55ACEE;
+  color: white;
+}
+ .hy{
+  text-align: center;
+  font-family: serif;
+  font-size: 30px;
+  color: rgb(8, 8, 19);
+}
